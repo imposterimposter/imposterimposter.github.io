@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/styles-85f889c238350ce0.css" integrity="sha384-JskFLbwsCzfGucKr0eciWYaEdu0+Iw5r0tKov5mVSS629A0S5ucPz2iTP9NkE/Z5"/>
+        <title>Yew App</title>
+        <link rel="manifest" href="/manifest.json">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+    <link rel="modulepreload" href="/imposter-f187b8dcbb031bc5.js" crossorigin="anonymous" integrity="sha384-Qnb/3OoXoC7Xijna/gzzJTlhXoUT+INVnzQo/aUAfeKsXxusV3lAlBRgBTzfjcBZ"><link rel="preload" href="/imposter-f187b8dcbb031bc5_bg.wasm" crossorigin="anonymous" integrity="sha384-t/DL86pq6KnoA3ShTKK7/av8LIkUA25RLedMBaXsQfMl2v6bgCF3fJS3NHFArdKn" as="fetch" type="application/wasm"></head>
+    <body>
+<script type="module">
+import init, * as bindings from '/imposter-f187b8dcbb031bc5.js';
+const wasm = await init({ module_or_path: '/imposter-f187b8dcbb031bc5_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
